@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>workzstation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>WorKzStation</h1>
+        <nav>
+            <ul>
+                <li><a href="welcome.html">Home</a></li>
+                <li><a href="index.html">Products</a></li>
+                <li><a href="#" onclick="showCart()">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <main>
+        <div class="welcome-section">
+            <h2>Welcome to Our Home Appliances Store!</h2>
+            <p>Discover a wide range of home appliances to make your life easier and more comfortable. From refrigerators and ovens to washing machines and microwaves, we have everything you need to upgrade your home.</p>
+            <p>Browse through our products and find the perfect appliance for your home. Our products are of the highest quality and available at competitive prices.</p>
+            <p><a href="index.html" class="button">Start Shopping</a></p>
+        </div>
+    </main>
+			
+			<div id="cart" class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="cart-total">0</span></p>
+            <button onclick="checkout()">Checkout</button>
+			
+			<div id="cart">
+    <h2>Cart</h2>
+    <ul id="cart-items"></ul>
+    <p id="cart-total-items"></p>
+    <p id="cart-total"></p>
+</div>
+<button onclick="showCart()">Show Cart</button>
+<button onclick="checkout()">Checkout</button>
+
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Home Appliances Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
